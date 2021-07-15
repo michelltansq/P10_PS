@@ -1,0 +1,2 @@
+rootProject.name = "P09_GettingMyLocations"
+include ':app'
