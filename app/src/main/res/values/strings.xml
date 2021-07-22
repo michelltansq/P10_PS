@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">P09_GettingMyLocations</string>
+    <string name="music_off">Music Off</string>
+    <string name="music_on">Music On</string>
 </resources>

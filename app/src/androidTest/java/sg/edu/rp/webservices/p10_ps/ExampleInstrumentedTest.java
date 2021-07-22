@@ -1,4 +1,4 @@
-package sg.edu.rp.webservices.p09_gettingmylocations;
+package sg.edu.rp.webservices.p10_ps;
 
 import android.content.Context;
 

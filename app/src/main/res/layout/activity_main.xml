@@ -8,22 +8,44 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Last Known Location:"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvLat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latitude: "/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="14"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvLong"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Longitude: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Known Location:"/>
+
+            <TextView
+                android:id="@+id/tvLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude: "/>
+
+            <TextView
+                android:id="@+id/tvLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude: "/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_on"/>
+
+    </LinearLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -41,27 +63,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/btnGetLocation"
+                android:id="@+id/btnStartDetector"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginRight="5dp"
-                android:text="Get Location Update"/>
+                android:text="Start Detector"/>
             <Button
-                android:id="@+id/btnRemoveLocation"
+                android:id="@+id/btnStopDetector"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:text="Remove Location Update"/>
+                android:text="Stop Detector"/>
         </LinearLayout>
         <Button
             android:id="@+id/btnRecord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Check Record"/>
+            android:text="Check Records"/>
     </LinearLayout>
 
 </LinearLayout>
